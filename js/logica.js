@@ -30,7 +30,14 @@ mostrar()
 const encriptar = e => {
     textofinal = "";
     mensajeEncriptado = [];
-    mensajePuro = textarea.value.toLowerCase(); //Guardamos el texto ingresado en la variable mensajePuro.
+    let acentosA = textarea.value.toLowerCase(); //Guardamos el texto ingresado en la variable mensajePuro.
+    let acentosE = acentosA.replace(/[áäâà]/g,'a');
+    let acentosI = acentosE.replace(/[éëêè]/g,'e');
+    let acentosO = acentosI.replace(/[íïîì]/g,'i');
+    let acentosU = acentosO.replace(/[óöôò]/g,'o');
+    mensajePuro = acentosU.replace(/[úüûù]/g,'u');
+
+    console.log(mensajePuro);
     for(let i = 0; i < mensajePuro.length; i++){
         
         if(mensajePuro[i] == "e"){
