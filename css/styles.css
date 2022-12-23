@@ -1,0 +1,262 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.div-principal{
+    background: #E5E5E5;
+    width: 100%;
+    height: 95vh;
+    display: flex;
+    flex-direction: row;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.div-izquierda{
+    width: 10%;
+    height: 90vh;
+    margin: auto;
+    margin-left: 40px;
+    text-align: center;
+}
+
+.div-izquierda img{
+    margin-top: 40px;
+    border-radius: 20px;
+}
+
+.formulario{
+    width: 50%;
+    height: 90vh;
+    margin: auto;
+}
+
+.div-centro{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+
+.div-centro .div-texto{
+    width: 100%;
+    height: 75%;
+}
+
+.div-centro textarea{
+    background: #E5E5E5;
+    width: 95%;
+    height: calc(80% - 150px);
+    margin-top: 150px;
+    border-style: none;
+    color: #0A3871;
+    font-size: xx-large;
+    resize: none;
+}
+
+.div-centro textarea::placeholder{
+    color: #0A3871;
+}
+
+.div-centro .div-notifiacion{
+    width: 80%;
+    height: 5%;
+    font-weight: bold;
+    font-size: 14px;
+    color: orangered;
+    text-align: start;
+    margin-left: 5%;
+    margin-top: 5%;
+}
+
+.div-centro .div-botones{
+    height: 10%;
+    display: flex;
+    flex-direction: row;
+}
+
+.div-botones label{
+    margin: auto;
+}
+
+.div-botones .div-btn-encriptar{
+    width: 100%;
+    height: 100%;
+}
+
+.div-botones .btn-encriptar{
+    background: #0A3871;
+    width: 90%;
+    height: 90%;
+    border-style: none;
+    border-radius: 20px;
+    border: 1px solid #0A3871;
+    font-size: 16px;
+    color: white;
+}
+
+.div-botones .btn-encriptar:hover{
+    background: orangered;
+}
+
+.div-botones .div-btn-desencriptar{
+    width: 100%;
+    height: 100%;
+}
+
+.div-botones .btn-desencriptar{
+    background: #D8DFE8;
+    width: 90%;
+    height: 90%;
+    border-style: none;
+    border-radius: 20px;
+    border: 1px solid #0A3871;
+    font-size: 16px;
+}
+
+.div-botones .btn-desencriptar:hover{
+    background: orangered;
+    color: white;
+}
+
+.div-derecha{
+    background: white;
+    width: 30%;
+    height: 90vh;
+    margin: auto;      
+    margin-right: 40px;
+    border-radius: 20px;
+}
+
+.div-derecha .mensaje-encriptado{
+    width: 90%;
+    height: 75%;
+    margin: auto;
+    margin-top: 10%;
+    font-size: large;
+    color: #0A3871;
+}
+
+.div-derecha .boton-copiar{
+    width: 90%;
+    height: 10%;
+    margin: auto;
+    text-align: center;
+}
+
+.div-derecha .boton-copiar .btn-copiar{
+    background: #D8DFE8;
+    width: 90%;
+    height: 90%;
+    color: #0A3871;
+    border-radius: 20px;
+    border-style: none;
+    border: 1px solid #0A3871;
+    font-size: 16px;
+    margin-top: 5%;
+}
+
+.div-derecha .boton-copiar .btn-copiar:hover{
+    background: orangered;
+    color: white;
+}
+
+.div-derecha .div-imagen{
+    width: 80%;
+    height: auto;
+    margin: auto;
+    margin-top: 40%;
+}
+
+.div-derecha .div-mensaje{
+    width: 90%;
+    height: auto;
+    color: #0A3871;
+    margin: 20px auto;
+    text-align: center;
+    font-weight: bold;
+}
+
+footer .div-autor{
+    background: #0A3871;
+    width: 100%;
+    height: 5vh;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  
+    text-align: center;
+}
+
+footer .div-autor p{
+    padding-top: 8px;
+}
+
+@media screen and (max-width: 768px) {
+    .div-principal{
+        flex-direction: column;
+        min-height: 1147px;
+    }
+
+    .div-izquierda{
+        height: 10%;
+    }
+
+    .formulario{
+        width: 100%;
+        height: 50%;
+    }
+
+    .div-centro{
+        width: 95%;
+        height: 100%;
+        margin: auto;
+    }
+
+    .div-texto textarea{
+        margin-top: 20px;
+        height: 80%;
+    }
+
+    .div-centro .div-notifiacion{
+        width: 80%;
+        margin: auto;
+    }
+
+    .div-derecha{
+        background: white;
+        width: 95%;
+        height: 30%;
+        margin: auto;
+    }
+
+    .div-derecha .mensaje-encriptado{
+        height: 80%;
+        margin-top: 10px;
+        font-size: large;
+    }
+
+    .div-derecha .boton-copiar{
+        height: 20%;
+    }
+
+    .div-derecha .boton-copiar .btn-copiar{
+        width: 50%;
+        height: 70%;
+        margin-top: 0;
+    }
+}
+@media screen and (max-width: 375px) {
+    
+    .div-centro .div-notifiacion{
+        width: 70%;
+    }
+    
+    .div-centro .div-botones{
+        flex-direction: column;
+        height: 20%;
+    }   
+
+    .div-derecha .boton-copiar .btn-copiar{
+        width: 90%;
+    }
+}
