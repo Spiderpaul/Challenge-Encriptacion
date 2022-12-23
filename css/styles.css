@@ -229,6 +229,15 @@ footer .div-autor p{
         margin: auto;
     }
 
+    .div-derecha .div-imagen{
+        width: 60%;
+        margin-top: 0;
+    }
+
+    .div-derecha .div-mensaje{
+        margin-top: 0;
+    }
+
     .div-derecha .mensaje-encriptado{
         height: 80%;
         margin-top: 10px;
@@ -245,6 +254,13 @@ footer .div-autor p{
         margin-top: 0;
     }
 }
+
+@media screen and (max-width: 604px){
+    .div-derecha .div-imagen{
+        width: 80%;
+    }
+}
+
 @media screen and (max-width: 375px) {
     
     .div-centro .div-notifiacion{
@@ -255,6 +271,10 @@ footer .div-autor p{
         flex-direction: column;
         height: 20%;
     }   
+
+    .div-derecha .div-imagen{
+        margin-top: 20%;
+    }
 
     .div-derecha .boton-copiar .btn-copiar{
         width: 90%;
