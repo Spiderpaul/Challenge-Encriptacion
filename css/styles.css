@@ -55,8 +55,12 @@
     resize: none;
 }
 
-.div-centro textarea::placeholder{
+.div-centro .texto::placeholder{
     color: #0A3871;
+}
+
+.div-centro .texto:focus{
+    outline: none;
 }
 
 .div-centro .div-notifiacion{
