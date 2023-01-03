@@ -3,7 +3,7 @@
 }
 
 .div-principal{
-    background: #E5E5E5;
+    background-image: url("fondo.jpg");
     width: 100%;
     height: 95vh;
     display: flex;
@@ -22,6 +22,7 @@
 .div-izquierda img{
     margin-top: 40px;
     border-radius: 20px;
+    box-shadow: 5px 5px 20px #293652;
 }
 
 .formulario{
@@ -31,11 +32,14 @@
 }
 
 .div-centro{
+    background: linear-gradient(#7086B7, #475b86);
     width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
     text-align: center;
+    border-radius: 20px 0px 0px 20px;
+    box-shadow: 5px 5px 20px #293652;
 }
 
 
@@ -45,18 +49,18 @@
 }
 
 .div-centro .texto{
-    background: #E5E5E5;
+    background: rgba(0,0,0,0);
     width: 95%;
     height: calc(80% - 150px);
-    margin-top: 150px;
+    margin-top: 130px;
     border-style: none;
-    color: #0A3871;
+    color: white;
     font-size: xx-large;
     resize: none;
 }
 
 .div-centro .texto::placeholder{
-    color: #0A3871;
+    color: white;
 }
 
 .div-centro .texto:focus{
@@ -68,10 +72,10 @@
     height: 5%;
     font-weight: bold;
     font-size: 14px;
-    color: orangered;
+    color: white;
     text-align: start;
     margin-left: 5%;
-    margin-top: 5%;
+    margin-bottom: 5%;
 }
 
 .div-centro .div-botones{
@@ -90,13 +94,13 @@
 }
 
 .div-botones .btn-encriptar{
-    background: #0A3871;
+    background: rgba(0,0,0,0);
     width: 90%;
     height: 90%;
     border-style: none;
-    border-radius: 20px;
-    border: 1px solid #0A3871;
-    font-size: 16px;
+    border-radius: 40px;
+    border: 2px solid white;
+    font-size: 18px;
     color: white;
 }
 
@@ -110,27 +114,28 @@
 }
 
 .div-botones .btn-desencriptar{
-    background: #D8DFE8;
+    background: rgba(0,0,0,0);
     width: 90%;
     height: 90%;
     border-style: none;
-    border-radius: 20px;
-    border: 1px solid #0A3871;
-    font-size: 16px;
+    border-radius: 40px;
+    border: 2px solid white;
+    font-size: 18px;
+    color: white;
 }
 
 .div-botones .btn-desencriptar:hover{
     background: orangered;
-    color: white;
 }
 
 .div-derecha{
-    background: white;
+    background: linear-gradient(#7086B7, #475b86);
     width: 30%;
     height: 90vh;
     margin: auto;      
     margin-right: 40px;
-    border-radius: 20px;
+    border-radius: 0px 20px 20px 0px;
+    box-shadow: 5px 5px 20px #293652;
 }
 
 .div-derecha .mensaje-encriptado{
@@ -139,7 +144,7 @@
     margin: auto;
     margin-top: 10%;
     font-size: large;
-    color: #0A3871;
+    color: white;
 }
 
 .div-derecha .boton-copiar{
@@ -150,14 +155,14 @@
 }
 
 .div-derecha .boton-copiar .btn-copiar{
-    background: #D8DFE8;
+    background: rgba(0,0,0,0);
     width: 90%;
     height: 90%;
-    color: #0A3871;
+    color: white;
     border-radius: 20px;
     border-style: none;
-    border: 1px solid #0A3871;
-    font-size: 16px;
+    border: 2px solid white;
+    font-size: 18px;
     margin-top: 5%;
 }
 
@@ -167,23 +172,27 @@
 }
 
 .div-derecha .div-imagen{
-    width: 80%;
+    width: 50%;
     height: auto;
     margin: auto;
-    margin-top: 40%;
+    margin-top: 30%;
+}
+
+.div-derecha .div-imagen img{
+    border-radius: 20px;
 }
 
 .div-derecha .div-mensaje{
     width: 90%;
     height: auto;
-    color: #0A3871;
+    color: white;
     margin: 20px auto;
     text-align: center;
     font-weight: bold;
 }
 
 footer .div-autor{
-    background: #0A3871;
+    background: #475b86;
     width: 100%;
     height: 5vh;
     color: white;
@@ -195,7 +204,7 @@ footer .div-autor p{
     padding-top: 8px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 950px) {
     .div-principal{
         flex-direction: column;
         min-height: 1147px;
@@ -214,6 +223,7 @@ footer .div-autor p{
         width: 95%;
         height: 100%;
         margin: auto;
+        border-radius: 20px;
     }
 
     .div-texto textarea{
@@ -227,15 +237,15 @@ footer .div-autor p{
     }
 
     .div-derecha{
-        background: white;
         width: 95%;
         height: 30%;
         margin: auto;
+        border-radius: 20px;
     }
 
     .div-derecha .div-imagen{
-        width: 60%;
-        margin-top: 0;
+        width: 25%;
+        margin-top: 2%;
     }
 
     .div-derecha .div-mensaje{
@@ -259,9 +269,15 @@ footer .div-autor p{
     }
 }
 
+@media screen and (max-width: 700px){
+    .div-derecha .div-imagen{
+        width: 30%;
+    }
+}
+
 @media screen and (max-width: 604px){
     .div-derecha .div-imagen{
-        width: 80%;
+        margin-top: 10%;
     }
 
     .div-centro .texto{
@@ -272,7 +288,8 @@ footer .div-autor p{
 @media screen and (max-width: 375px) {
     
     .div-centro .div-notifiacion{
-        width: 70%;
+        width: 90%;
+        margin-bottom: 5px;
     }
     
     .div-centro .div-botones{
@@ -289,9 +306,17 @@ footer .div-autor p{
     }
 }
 
-@media screen and (max-width: 248px){
+@media screen and (max-width: 288px){
     .div-centro .texto{
         font-size: large;
         text-align: center;
+    }
+
+    .div-centro .div-notifiacion{
+        visibility: hidden;
+    }
+
+    .div-derecha .div-imagen{
+        margin-top: 50%;
     }
 }
