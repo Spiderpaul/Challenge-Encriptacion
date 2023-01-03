@@ -263,6 +263,10 @@ footer .div-autor p{
     .div-derecha .div-imagen{
         width: 80%;
     }
+
+    .div-centro .texto{
+        font-size: x-large;
+    }
 }
 
 @media screen and (max-width: 375px) {
@@ -282,5 +286,12 @@ footer .div-autor p{
 
     .div-derecha .boton-copiar .btn-copiar{
         width: 90%;
+    }
+}
+
+@media screen and (max-width: 248px){
+    .div-centro .texto{
+        font-size: large;
+        text-align: center;
     }
 }
