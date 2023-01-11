@@ -201,6 +201,7 @@ footer .div-autor{
 
 footer .div-autor p{
     padding-top: 8px;
+    font-size: small;
 }
 
 @media screen and (max-width: 950px) {
