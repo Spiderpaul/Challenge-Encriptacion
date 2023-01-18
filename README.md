@@ -10,7 +10,7 @@
 
 ## Link del sitio:
 
-Pagina : [Github-Pages](https://spiderpaul.github.io/encriptar-desencriptar.github.io/)
+Pagina : [encriptar-desencriptar.github.io](https://spiderpaul.github.io/encriptar-desencriptar.github.io/)
 
 ## Descripción del proyecto
 
@@ -37,7 +37,7 @@ Las llaves de encriptación utilizadas para el proyecto son las siguientes:
 ## 📋Requisitos:
 
 - Debe funcionar solo con letras minúsculas
-- No deben ser utilizados letras con acentos ni caracteres especiales
+- No deben ser utilizados letras con acentos
 - Debe ser posible convertir una palabra para la versión encriptada también devolver una palabra encriptada para su versión original.
 
 ` Por ejemplo: "gato" => "gaitober" "gaitober" => "gato"`
